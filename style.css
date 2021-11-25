@@ -53,3 +53,20 @@ main .ville i {
     box-shadow: 3px 3px 12px  #000000;
     transition: 0.3s;
 }
+.fonctionnement{
+    padding: 70px;
+}
+.fonctionnement ol{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.fonctionnement li{
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    width: 28%;
+    box-shadow: 0px 0px 10px 5px #cacaca;
+}
+
+
