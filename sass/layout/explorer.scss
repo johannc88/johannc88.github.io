@@ -1,0 +1,26 @@
+.explorer {
+    text-align: center;
+& h2{
+    font-size: 32px;
+    padding: 20px;
+}
+& p{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+& button{
+    background-image: linear-gradient(to top,#9356dc, #ff79da);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    box-shadow: 2px 1px 16px -3px #000000;
+}
+& button:hover{
+    opacity: 0.8;
+    box-shadow: 3px 3px 12px  #000000;
+    transition: 0.3s;
+}
+}
