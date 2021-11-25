@@ -1,0 +1,29 @@
+ .fonctionnement {
+     padding-top: 40px;
+ }
+ ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    
+}
+ li {
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    box-shadow: 2px 1px 16px -3px #000000;
+    width: 25%;
+    padding:15px;
+    
+
+}
+
+@media (max-width: 767px){
+ ol {
+    flex-direction: column;
+}
+ li {
+     width: 90%;
+     margin-top: 15px;
+ }
+}
