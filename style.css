@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
-  margin: 0px;
+  padding: 0;
+  margin-left: 50px;
   font-family: "roboto";
-}
-
-main {
   max-width: 1400px;
-  margin: 20px;
 }
 
 header h1 {
+  margin: 0px;
   font-family: "Shrikhand";
   font-size: 40px;
   text-align: center;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  border-bottom: 1px solid #e6e3e3;
+  padding: 30px;
   position: relative;
+  justify-content: center;
 }
 
 .ville {
+  margin-top: 0px;
   background-color: #f3f3f3;
   text-align: center;
   padding: 30px;
@@ -60,33 +60,49 @@ header h1 {
 }
 
 .fonctionnement {
-  padding-top: 40px;
+  counter-reset: numero;
 }
-
-ol {
+.fonctionnement ol {
+  list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 40px;
+  gap: 30px;
 }
-
-li {
-  background-color: #f6f6f6;
-  border-radius: 15px;
-  box-shadow: 2px 1px 16px -3px #000000;
-  width: 25%;
-  padding: 15px;
-}
-
-@media (max-width: 767px) {
-  ol {
+@media (max-width: 1000px) {
+  .fonctionnement ol {
     flex-direction: column;
   }
-
-  li {
-    width: 90%;
-    margin-top: 15px;
-  }
+}
+.fonctionnement li {
+  position: relative;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  padding: 16px 32px;
+  flex-grow: 1;
+  border-radius: 15px;
+  box-shadow: 2px 1px 16px -3px #000000;
+}
+.fonctionnement li::before {
+  content: counter(numero);
+  counter-increment: numero;
+  color: white;
+  background-color: #9356dc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 12px;
+  left: -17px;
+}
+.fonctionnement li:hover {
+  opacity: 0.8;
+  box-shadow: 3px 3px 12px #000000;
+  transition: 0.3s;
+}
+.fonctionnement i.fas {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

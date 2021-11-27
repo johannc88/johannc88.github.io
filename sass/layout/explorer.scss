@@ -1,3 +1,5 @@
+@import "../utils/box-shadow.scss";
+@import "../utils/hover.scss";
 .explorer {
     text-align: center;
 & h2{
@@ -16,11 +18,9 @@
     color: white;
     font-weight: 500;
     font-size: 24px;
-    box-shadow: 2px 1px 16px -3px #000000;
+    @include base-shadow;
 }
 & button:hover{
-    opacity: 0.8;
-    box-shadow: 3px 3px 12px  #000000;
-    transition: 0.3s;
+    @include hover;
 }
 }
