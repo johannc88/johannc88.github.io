@@ -1,0 +1,63 @@
+.menus{
+    background-color: #e2e1e1;
+    padding-bottom: 2rem;
+    h2{
+        margin-bottom: 2rem;
+    }
+    .carte_menu a{
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .carte {
+        background-color: white;
+        width: 98%;
+        margin: 1%;
+        margin-top: 2rem;
+        height: 15rem;
+    }
+    .carte_img{
+        background-image: url("../../assets/restaurants/menu-1.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 12rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    & .image2{
+        background-image: url("../../assets/restaurants/menu-2.jpg");
+    }
+    & .image3{
+        background-image: url("../../assets/restaurants/menu-3.jpg");
+    }
+    & .image4{
+        background-image: url("../../assets/restaurants/menu-4.jpg");
+    }
+    .carte_texte{
+        margin-left: 1rem;
+        width: 90%;
+    }
+    .carte_texte h3{
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+        font-weight: 500;
+    }
+    .carte_texte p{
+        margin-top: 0;
+        font-weight: 300;
+    }
+    .texte_icone{
+        display: flex;
+    }
+    .icone_coeur{
+        width: 10%;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+         .fa-regular::before{
+            background-image: linear-gradient(to top,#9356dc, #ff79da);
+        }
+    }
+}

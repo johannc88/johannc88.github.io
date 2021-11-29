@@ -1,13 +1,23 @@
 .ville{
-    margin-top: 0px;
+  
+    margin-top: -18px;
     background-color: #f3f3f3;
+    padding: 1.5rem 1rem;
+
+    
+  & .titre{
     text-align: center;
-    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
+    
+  }
+  & h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
   & i {
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 }
