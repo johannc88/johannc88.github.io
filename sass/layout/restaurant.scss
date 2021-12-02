@@ -1,14 +1,13 @@
 .menus{
     background-color: #e2e1e1;
     padding-bottom: 2rem;
-    h2{
-        margin-bottom: 2rem;
-    }
+    
     .carte_menu a{
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
         cursor: pointer;
+        margin-top: 1rem;
     }
     .carte {
         background-color: white;
@@ -55,9 +54,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-         .fa-regular::before{
-            background-image: linear-gradient(to top,#9356dc, #ff79da);
-        }
+        flex-wrap: wrap;       
     }
 }

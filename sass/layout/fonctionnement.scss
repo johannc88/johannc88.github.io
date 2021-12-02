@@ -4,10 +4,11 @@
 .fonctionnement{
     counter-reset: numero;
     & ol{
+        margin: 0;
         padding: 1.5rem;
         list-style-type: none;
         display: flex;
-        gap: 30px;
+        gap: 1rem;
         @media (max-width: 1000px){
             flex-direction: column;
         }

@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
   margin: 0;
   padding: 0;
   font-family: "roboto";
   max-width: 1400px;
+}
+
+h2 {
+  padding: 1rem 0;
+  margin: 0 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -34,7 +45,7 @@ header h1 {
 }
 .ville h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .ville i {
   font-size: 1.1rem;
@@ -42,7 +53,7 @@ header h1 {
 
 .explorer {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .explorer h2 {
   font-size: 1.8rem;
@@ -72,10 +83,11 @@ header h1 {
   counter-reset: numero;
 }
 .fonctionnement ol {
+  margin: 0;
   padding: 1.5rem;
   list-style-type: none;
   display: flex;
-  gap: 30px;
+  gap: 1rem;
 }
 @media (max-width: 1000px) {
   .fonctionnement ol {
@@ -119,14 +131,12 @@ header h1 {
   background-color: #e2e1e1;
   padding-bottom: 2rem;
 }
-.menus h2 {
-  margin-bottom: 2rem;
-}
 .menus .carte_menu a {
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
   cursor: pointer;
+  margin-top: 1rem;
 }
 .menus .carte {
   background-color: white;
@@ -175,12 +185,9 @@ header h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
-.menus .icone_coeur .fa-regular::before {
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
-}
 
 .pied_de_page {
-  background-color: #110101;
+  background-color: #302f2f;
   padding-bottom: 2rem;
 }
 .pied_de_page .titre_footer {
@@ -201,11 +208,90 @@ header h1 {
 .pied_de_page .titre_footer li {
   padding: 0;
   margin-top: 0.5rem;
+  cursor: pointer;
 }
 .pied_de_page .titre_footer i {
   width: 0.2rem;
   font-size: 0.8rem;
   margin-right: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+  max-width: 1400px;
+}
+
+h2 {
+  padding: 1rem 0;
+  margin: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img_baniere {
+  margin-top: -2rem;
+}
+
+.img_baniere img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.menu_entree {
+  margin: 0 2rem;
+}
+
+.menu_carte {
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -3rem;
+  background-color: white;
+  position: relative;
+}
+
+.titre_restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.titre_restaurant h2 {
+  padding-top: 2rem;
+  margin-left: 0;
+  font-family: "shrikhand";
+  font-weight: 100;
+}
+.titre_restaurant i {
+  font-size: 2rem;
+}
+
+.menu_entree {
+  margin-bottom: 2rem;
+}
+.menu_entree h2 {
+  margin-left: 0;
+  padding-bottom: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border-bottom: 3px solid #99e2d0;
+  width: 2.5rem;
+}
+.menu_entree .entree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_entree .titre_entree h3 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.menu_entree .titre_entree p {
+  margin-top: 0;
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */
