@@ -1,6 +1,29 @@
 @import "../base.scss";
+@import "../utils/box-shadow.scss";
+@import "../utils/animation.scss"; 
+    
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    & .header_icone{
+        height: 3rem;
+    }
+    & .header_titre{
+        font-family: "shrikhand";
+    }
+}
+ .fa-arrow-left
+{
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 2rem;
+    left: 0rem;
+}
 .img_baniere{
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
 .img_baniere img{
     width: 100%;
@@ -14,9 +37,9 @@
     border-radius: 2rem 2rem 0 0;
     margin-top: -3rem;
     background-color: white;
-    position: relative;
+    position: relative; 
 }
-.titre_restaurant{
+ .titre_restaurant{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,6 +66,7 @@
     }
     
     .entree{
+        margin: 0rem 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -54,6 +78,44 @@
     .titre_entree p{
         margin-top: 0;
         font-weight: 100;
+    }
+    .description_menu{
+        
+        margin-top:1rem ;
+        border-radius: 1rem;
+        @include base-shadow;
+        animation: appear 2s;
+        animation-fill-mode: both;
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}){
+                animation-delay: 200ms * $i;
+            }
+            &:hover .check{
+                margin-right: -1rem;
+                border-radius: 0 1rem 1rem 0;
+                transition: 1s;
+                margin-left: 1rem;
+            }
+        }
+        overflow: hidden;
+        cursor: pointer;
+        .menu_prix{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .check{
+            margin-right: -6rem;
+            height: 5rem;
+            width: 5rem;
+            background-color: #99e2d0;
+
+            
+        }
+        
+
     }
     
 }
