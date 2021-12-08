@@ -7,7 +7,6 @@ body {
   padding: 0;
   font-family: "roboto";
   max-width: 1400px;
-  text-overflow: ellipsis;
 }
 
 h2 {
@@ -81,6 +80,39 @@ header h1 {
   transition: 0.3s;
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #f6f6f6;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.7;
+  animation: disappear 50ms 3s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 80px;
+  width: 80px;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356dc;
+  border-bottom: 5px solid #9356dc;
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+}
+
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .fonctionnement {
   counter-reset: numero;
 }
@@ -97,6 +129,7 @@ header h1 {
   }
 }
 .fonctionnement li {
+  margin-right: 1rem;
   position: relative;
   cursor: pointer;
   background-color: #f6f6f6;
@@ -187,6 +220,26 @@ header h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
+.menus .far.fa-heart {
+  margin-right: -32px;
+}
+.menus .fas.fa-heart {
+  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.menus .far.fa-heart:hover {
+  opacity: 0;
+  transition: 0.7;
+}
+.menus .fas.fa-heart:hover {
+  opacity: 1;
+}
 
 .pied_de_page {
   background-color: #302f2f;
@@ -216,6 +269,9 @@ header h1 {
   width: 0.2rem;
   font-size: 0.8rem;
   margin-right: 2rem;
+}
+.pied_de_page .titre_footer a {
+  color: white;
 }
 
 body {
@@ -271,7 +327,7 @@ a {
 
 .img_baniere img {
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   object-fit: cover;
 }
 
@@ -300,6 +356,29 @@ a {
 }
 .titre_restaurant i {
   font-size: 2rem;
+}
+.titre_restaurant .fas.fa-heart {
+  margin-left: -4px;
+}
+.titre_restaurant .far.fa-heart {
+  margin-right: -32px;
+}
+.titre_restaurant .fas.fa-heart {
+  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.titre_restaurant .far.fa-heart:hover {
+  opacity: 0;
+  transition: 0.7;
+}
+.titre_restaurant .fas.fa-heart:hover {
+  opacity: 1;
 }
 
 .menu_entree {

@@ -14,7 +14,7 @@
         }
     }
     & li{
-        
+        margin-right: 1rem;
         position: relative ;
         &::before {
             content: counter(numero) ;
