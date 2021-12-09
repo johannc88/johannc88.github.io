@@ -14,6 +14,7 @@
         }
     }
     & li{
+        width: 90%;
         margin-right: 1rem;
         position: relative ;
         &::before {
@@ -32,18 +33,24 @@
             left: -17px;
         }
         cursor: pointer;
-        background-color: #f6f6f6;
+        background-color: #f0f0f0;
         padding: 1rem 2rem;
         flex-grow: 1;
         border-radius: 15px;
         @include base-shadow;
     }
     & li:hover{
+        font-weight: 500;
         @include hover;
+        
     }
     
     & i.fas {
         margin-right: 20px;
+        color: rgb(161, 161, 161);
+    }
+    &  li:hover i.fas {
+        color: #9356dc;
     }
 
 }
