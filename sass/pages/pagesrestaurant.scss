@@ -1,182 +1,156 @@
 @import "../base.scss";
 @import "../utils/box-shadow.scss";
-@import "../utils/animation.scss"; 
+@import "../utils/animation.scss";
 @import "../utils/heart.scss";
-    
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    & .header_icone{
-        height: 3rem;
-    }
-    & .header_titre{
-        font-family: "shrikhand";
-    }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  & .header_icone {
+    height: 3rem;
+  }
+  & .header_titre {
+    font-family: "shrikhand";
+  }
 }
- .fa-arrow-left
-{
-    position: absolute;
+.fa-arrow-left {
+  position: absolute;
+  font-size: 2rem;
+  margin-left: 2rem;
+  left: 0rem;
+}
+.img_baniere {
+  margin-top: -1rem;
+}
+.img_baniere img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+}
+.menu_entree {
+  margin: 0 2rem;
+}
+.menu_carte {
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -3rem;
+  background-color: white;
+  position: relative;
+}
+.titre_restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+  & h2 {
+    padding-top: 2rem;
+    margin-left: 0;
+    font-family: "shrikhand";
+    font-weight: 100;
+  }
+  & i {
     font-size: 2rem;
-    margin-left: 2rem;
-    left: 0rem;
+    cursor: pointer;
+  }
+  .fas.fa-heart {
+    margin-left: -4px;
+  }
+  @include heart;
 }
-.img_baniere{
-    margin-top: -1rem;
-}
-.img_baniere img{
-    width: 100%;
-    height: 45vh;
-    object-fit: cover;
-}
-.menu_entree{
-    margin:  0 2rem;
-}
-.menu_carte{
-    border-radius: 2rem 2rem 0 0;
-    margin-top: -3rem;
-    background-color: white;
-    position: relative; 
-}
- .titre_restaurant{
+.menu_entree {
+  margin-bottom: 2rem;
+  & h2 {
+    margin-left: 0;
+    padding-bottom: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    border-bottom: 3px solid #99e2d0;
+    width: 2.5rem;
+  }
+
+  .entree {
+    margin: 0rem 1rem;
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
-    margin: 0 2rem;
-    & h2{
-        padding-top: 2rem;
-        margin-left: 0;
-        font-family: "shrikhand";
-        font-weight: 100;
+  }
+  .titre_entree {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .titre_entree h3 {
+    margin-bottom: 0;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .titre_entree p {
+    margin-top: 0;
+    font-weight: 100;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .description_menu {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    @include base-shadow;
+    animation: appear 2s;
+    animation-fill-mode: both;
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        animation-delay: 200ms * $i;
+      }
+      &:hover .check {
+        margin-right: -1rem;
+        border-radius: 0 1rem 1rem 0;
+        transition: 1s;
+      }
     }
-    & i{
-        font-size: 2rem;
-        cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+
+    .menu_prix {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0rem 1rem;
+      padding-right: 1.5rem;
+      overflow: hidden;
     }
-    .fas.fa-heart{
-        margin-left:-4px ;
+    .check {
+      margin-right: -7rem;
+      height: 5rem;
+      width: 5rem;
+      background-color: #99e2d0;
+      color: #99e2d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
-    @include heart
+    .fas {
+      background-color: white;
+      width: 1rem;
+      padding: 0.5rem;
+      border-radius: 50%;
+      right: 1rem;
+    }
+  }
+  .description_menu:hover .fas {
+    animation: rotation 2s;
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
-.menu_entree{
-    margin-bottom: 2rem;
-    & h2 {
-        margin-left: 0;
-        padding-bottom: 0.2rem;
-        font-size: 1.2rem;
-        font-weight: 100;
-        border-bottom: 3px solid #99e2d0 ;
-        width: 2.5rem;
-    }
-    
-    .entree{
-        margin: 0rem 1rem;
-        display: flex;
-        
-        justify-content: space-between;
-        
-
-    }
-    .titre_entree{
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    
-    
-    .titre_entree h3 {
-        margin-bottom: 0;
-        font-weight: 500;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        
-        
-        
-    }
-    .titre_entree p{
-        margin-top: 0;
-        font-weight: 100;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        
-        
-    }
-    .description_menu{
-        margin-top:1rem ;
-        border-radius: 1rem;
-        @include base-shadow;
-        animation: appear 2s;
-        animation-fill-mode: both;
-        @for $i from 1 through 5 {
-            &:nth-child(#{$i}){
-                animation-delay: 200ms * $i;
-            }
-            &:hover .check {
-                margin-right: -1rem;
-                border-radius: 0 1rem 1rem 0;
-                transition: 1s;
-                
-                }
-        }
-        overflow: hidden;
-        cursor: pointer;
-
-        .menu_prix{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0rem 1rem ;
-            padding-right: 1.5rem;
-            overflow: hidden;
-
-        }
-        .check{
-            margin-right: -7rem;
-            height: 5rem;
-            width: 5rem;
-            background-color: #99e2d0;
-            color: #99e2d0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            
-            
-            
-        }
-        .fas{
-            background-color: white;
-            width: 1rem;
-            padding: 0.5rem;
-            border-radius: 50%;
-            right: 1rem;                 
-            }
-            }
-        .description_menu:hover .fas{
-            animation: rotation 2s;
-                    @keyframes rotation {
-                        0%{
-                            transform: rotate(0deg);
-                        }
-                        100%{
-                            transform: rotate(360deg);
-                        }}
-        }
-        
-       
-        }
-
-        
-
-        
-        
-
-    
-    
-
-

@@ -1,54 +1,52 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/hover.scss";
 
-.fonctionnement{
-    counter-reset: numero;
-    & ol{
-        padding-right: 1rem;
-        list-style-type: none;
-        display: flex;
-        gap: 2rem;
-        @media (max-width: 1000px){
-            flex-direction: column;
-        }
+.fonctionnement {
+  counter-reset: numero;
+  & ol {
+    padding-right: 1rem;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    @media (max-width: 1000px) {
+      flex-direction: column;
     }
-    & li{
-        width: 100%;
-        position: relative ;
-        &::before {
-            content: counter(numero) ;
-            counter-increment: numero;
-            color: white;
-            background-color: #9356dc;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            bottom: 12px;
-            left: -17px;
-        }
-        cursor: pointer;
-        background-color: #f0f0f0;
-        padding: 1rem 2rem;
-        flex-grow: 1;
-        border-radius: 15px;
-        @include base-shadow;
+  }
+  & li {
+    width: 100%;
+    position: relative;
+    &::before {
+      content: counter(numero);
+      counter-increment: numero;
+      color: white;
+      background-color: #9356dc;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 12px;
+      left: -17px;
     }
-    & li:hover{
-        font-weight: 500;
-        @include hover;
-        
-    }
-    
-    & i.fas {
-        margin-right: 20px;
-        color: rgb(161, 161, 161);
-    }
-    &  li:hover i.fas {
-        color: #9356dc;
-    }
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 1rem 2rem;
+    flex-grow: 1;
+    border-radius: 15px;
+    @include base-shadow;
+  }
+  & li:hover {
+    font-weight: 500;
+    @include hover;
+  }
 
+  & i.fas {
+    margin-right: 20px;
+    color: rgb(161, 161, 161);
+  }
+  & li:hover i.fas {
+    color: #9356dc;
+  }
 }

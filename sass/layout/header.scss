@@ -1,13 +1,13 @@
 @import "../utils/box-shadow.scss";
 header {
-    text-align: center;
+  text-align: center;
+  margin-top: 0px;
+  @include base-shadow;
+  & h1 {
+    padding: 1rem;
     margin-top: 0px;
-    @include base-shadow;
-    & h1{
-        padding: 1rem;
-        margin-top: 0px;
-        font-family: 'Shrikhand';
-        font-size: 2rem;
-        font-weight: 300;
-    }
+    font-family: "Shrikhand";
+    font-size: 2rem;
+    font-weight: 300;
+  }
 }
