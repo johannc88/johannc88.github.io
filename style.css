@@ -118,11 +118,10 @@ header h1 {
   counter-reset: numero;
 }
 .fonctionnement ol {
-  margin: 0;
-  padding: 1.5rem;
+  padding-right: 1rem;
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 @media (max-width: 1000px) {
   .fonctionnement ol {
@@ -130,8 +129,7 @@ header h1 {
   }
 }
 .fonctionnement li {
-  width: 90%;
-  margin-right: 1rem;
+  width: 100%;
   position: relative;
   cursor: pointer;
   background-color: #f0f0f0;
@@ -248,6 +246,14 @@ header h1 {
   opacity: 1;
 }
 
+@media (min-width: 1000px) {
+  .carte_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    gap: 2rem;
+  }
+}
 .pied_de_page {
   background-color: #302f2f;
   padding-bottom: 2rem;
@@ -284,6 +290,11 @@ header h1 {
   color: white;
 }
 
+@media (min-width: 1000px) {
+  footer {
+    margin-top: 14rem;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -366,6 +377,7 @@ a {
 }
 .titre_restaurant i {
   font-size: 2rem;
+  cursor: pointer;
 }
 .titre_restaurant .fas.fa-heart {
   margin-left: -4px;
@@ -408,8 +420,8 @@ a {
   justify-content: space-between;
 }
 .menu_entree .titre_entree {
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 .menu_entree .titre_entree h3 {
@@ -480,6 +492,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0rem 1rem;
+  padding-right: 1.5rem;
+  overflow: hidden;
 }
 .menu_entree .description_menu .check {
   margin-right: -7rem;
@@ -509,9 +524,6 @@ a {
   100% {
     transform: rotate(360deg);
   }
-}
-.menu_entree .menu_prix:hover h4 {
-  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

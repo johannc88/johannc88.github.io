@@ -60,3 +60,13 @@
     @include heart;
    
 }
+@media (min-width:1000px){
+        
+    
+    .carte_menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 400px;
+        gap: 2rem;
+    }
+}
