@@ -6,8 +6,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "roboto";
-  max-width: 1600px;
   user-select: none;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h2 {
@@ -23,7 +27,7 @@ a {
 header {
   text-align: center;
   margin-top: 0px;
-  box-shadow: 2px 1px 16px -3px #777777;
+  box-shadow: 0px 6px 16px #cfcfcf;
 }
 header h1 {
   padding: 1rem;
@@ -66,6 +70,7 @@ header h1 {
   font-size: 1.1rem;
 }
 .explorer button {
+  cursor: pointer;
   margin-top: 1.2rem;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   padding: 0.8rem 1.6rem;
@@ -74,11 +79,11 @@ header h1 {
   color: white;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 2px 1px 16px -3px #777777;
+  box-shadow: 0px 6px 16px #cfcfcf;
 }
 .explorer button:hover {
   opacity: 0.8;
-  box-shadow: 3px 3px 12px #000000;
+  box-shadow: 0px 6px 16px #f5edff;
   transition: 0.3s;
 }
 
@@ -119,10 +124,13 @@ header h1 {
   counter-reset: numero;
 }
 .fonctionnement ol {
-  padding-right: 1rem;
+  margin-left: 0rem;
+  padding: 1rem;
+  justify-content: space-around;
   list-style-type: none;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1000px) {
   .fonctionnement ol {
@@ -134,10 +142,10 @@ header h1 {
   position: relative;
   cursor: pointer;
   background-color: #f0f0f0;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   flex-grow: 1;
   border-radius: 15px;
-  box-shadow: 2px 1px 16px -3px #777777;
+  box-shadow: 0px 6px 16px #cfcfcf;
 }
 .fonctionnement li::before {
   content: counter(numero);
@@ -157,7 +165,7 @@ header h1 {
 .fonctionnement li:hover {
   font-weight: 500;
   opacity: 0.8;
-  box-shadow: 3px 3px 12px #000000;
+  box-shadow: 0px 6px 16px #f5edff;
   transition: 0.3s;
 }
 .fonctionnement i.fas {
@@ -169,9 +177,11 @@ header h1 {
 }
 
 .menus {
-  background-color: #f6f6f6;
-  padding-bottom: 2rem;
-  margin-bottom: 15rem;
+  background-color: #f0f0f0;
+  padding-bottom: 4rem;
+}
+.menus .carte_menu {
+  height: auto;
 }
 .menus .carte_menu a {
   display: flex;
@@ -179,47 +189,53 @@ header h1 {
   border-radius: 1rem;
   cursor: pointer;
   margin-top: 1rem;
+  box-shadow: 0px 6px 16px #cfcfcf;
 }
-.menus .carte {
+.menus .carte_menu a:hover {
+  opacity: 0.8;
+  box-shadow: 0px 6px 16px #f5edff;
+  transition: 0.3s;
+}
+.menus .carte_menu .carte {
   background-color: white;
   width: 98%;
   margin: 1%;
   margin-top: 2rem;
   height: 15rem;
 }
-.menus .carte_img {
+.menus .carte_menu .carte_img {
   background-image: url("../../assets/restaurants/menu-1.jpg");
   background-size: cover;
   background-position: center;
   height: 12rem;
   border-radius: 1rem 1rem 0 0;
 }
-.menus .image2 {
+.menus .carte_menu .image2 {
   background-image: url("../../assets/restaurants/menu-2.jpg");
 }
-.menus .image3 {
+.menus .carte_menu .image3 {
   background-image: url("../../assets/restaurants/menu-3.jpg");
 }
-.menus .image4 {
+.menus .carte_menu .image4 {
   background-image: url("../../assets/restaurants/menu-4.jpg");
 }
-.menus .carte_texte {
+.menus .carte_menu .carte_texte {
   margin-left: 1rem;
   width: 90%;
 }
-.menus .carte_texte h3 {
+.menus .carte_menu .carte_texte h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.3rem;
   font-weight: 500;
 }
-.menus .carte_texte p {
+.menus .carte_menu .carte_texte p {
   margin-top: 0;
   font-weight: 300;
 }
-.menus .texte_icone {
+.menus .carte_menu .texte_icone {
   display: flex;
 }
-.menus .icone_coeur {
+.menus .carte_menu .icone_coeur {
   width: 10%;
   font-size: 2rem;
   display: flex;
@@ -227,10 +243,10 @@ header h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
-.menus .far.fa-heart {
+.menus .carte_menu .far.fa-heart {
   margin-right: -32px;
 }
-.menus .fas.fa-heart {
+.menus .carte_menu .fas.fa-heart {
   background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
   background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
@@ -240,11 +256,11 @@ header h1 {
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.menus .far.fa-heart:hover {
+.menus .carte_menu .far.fa-heart:hover {
   opacity: 0;
   transition: 0.7;
 }
-.menus .fas.fa-heart:hover {
+.menus .carte_menu .fas.fa-heart:hover {
   opacity: 1;
 }
 
@@ -259,6 +275,7 @@ header h1 {
 .pied_de_page {
   background-color: #302f2f;
   padding-bottom: 2rem;
+  display: flex;
 }
 .pied_de_page .titre_footer {
   color: white;
@@ -292,17 +309,33 @@ header h1 {
   color: white;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   footer {
-    margin-top: 5rem;
+    margin-top: 0rem;
+  }
+
+  .pied_de_page {
+    justify-content: center;
+    align-items: center;
+  }
+  .pied_de_page ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "roboto";
-  max-width: 1600px;
   user-select: none;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h2 {
@@ -444,7 +477,7 @@ a {
 .menu_entree .description_menu {
   margin-top: 1rem;
   border-radius: 1rem;
-  box-shadow: 2px 1px 16px -3px #777777;
+  box-shadow: 0px 6px 16px #cfcfcf;
   animation: appear 2s;
   animation-fill-mode: both;
   overflow: hidden;
@@ -526,6 +559,53 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+  .entree-1 {
+    width: 45%;
+  }
+
+  .plats-1 {
+    width: 45%;
+    position: absolute;
+    top: 5.3rem;
+    right: 0rem;
+  }
+
+  .dessert-1 {
+    margin-left: 25%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  .fa-arrow-left {
+    display: none;
+  }
+
+  .menu_carte {
+    width: 100%;
+    height: 565px;
+    flex-wrap: wrap;
+  }
+
+  .menu_entree {
+    width: 30%;
+    margin: 0;
+    padding: 1rem 1rem;
+    height: 450px;
+  }
+
+  .menu_entree_plat_dessert {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 450px;
   }
 }
 

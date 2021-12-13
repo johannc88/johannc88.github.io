@@ -4,10 +4,13 @@
 .fonctionnement {
   counter-reset: numero;
   & ol {
-    padding-right: 1rem;
+    margin-left: 0rem;
+    padding: 1rem;
+    justify-content: space-around;
     list-style-type: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
     @media (max-width: 1000px) {
       flex-direction: column;
     }
@@ -32,7 +35,7 @@
     }
     cursor: pointer;
     background-color: #f0f0f0;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     flex-grow: 1;
     border-radius: 15px;
     @include base-shadow;
