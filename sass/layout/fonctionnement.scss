@@ -4,19 +4,20 @@
 .fonctionnement {
   counter-reset: numero;
   & ol {
+    width: 90%;
     margin-left: 0rem;
-    padding: 1rem;
+    padding-left: 2rem;
     justify-content: space-around;
     list-style-type: none;
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     margin-bottom: 5rem;
     @media (max-width: 1000px) {
       flex-direction: column;
     }
   }
   & li {
-    width: 90%;
+    width: 80%;
     position: relative;
     &::before {
       content: counter(numero);
