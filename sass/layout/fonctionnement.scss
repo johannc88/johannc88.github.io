@@ -2,12 +2,13 @@
 @import "../utils/hover.scss";
 
 .fonctionnement {
+  width: 100%;
   counter-reset: numero;
   & ol {
-    width: 90%;
+    width: 95%;
     margin-left: 0rem;
     padding-left: 2rem;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     display: flex;
     gap: 1rem;
@@ -17,8 +18,18 @@
     }
   }
   & li {
-    width: 80%;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    border-radius: 15px;
+    @include base-shadow;
+    width: 25%;
     position: relative;
+    @media (max-width:1000px) {
+      width: 90%;
+      padding-right: 0;
+    }
     &::before {
       content: counter(numero);
       counter-increment: numero;
@@ -34,12 +45,7 @@
       bottom: 12px;
       left: -17px;
     }
-    cursor: pointer;
-    background-color: #f0f0f0;
-    padding: 1rem 2rem;
-    flex-grow: 1;
-    border-radius: 15px;
-    @include base-shadow;
+    
   }
   & li:hover {
     font-weight: 500;
