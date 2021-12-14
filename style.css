@@ -59,7 +59,7 @@ header h1 {
 
 .explorer {
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 2rem 0rem;
 }
 .explorer h2 {
   font-size: 1.8rem;
@@ -120,6 +120,7 @@ header h1 {
   }
 }
 .fonctionnement {
+  margin-top: 4rem;
   width: 100%;
   counter-reset: numero;
 }
@@ -202,6 +203,23 @@ header h1 {
   opacity: 0.8;
   box-shadow: 0px 6px 16px #f5edff;
   transition: 0.3s;
+}
+.menus .carte_menu .nouveau {
+  position: relative;
+}
+.menus .carte_menu .nouveau::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  right: 1rem;
+  top: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0.8;
+  color: #10392f;
 }
 .menus .carte_menu .carte {
   background-color: white;

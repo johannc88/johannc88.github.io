@@ -17,6 +17,23 @@
         @include hover;
       }
     }
+    .nouveau{
+      position: relative;
+    }
+    .nouveau::before{
+      content: "Nouveau";
+      position: absolute;
+      height: 2rem;
+      width: 5rem;
+      background-color: #99e2d0;
+      right: 1rem;
+      top: 1rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      opacity: 0.8;
+      color: darken($color: #99e2d0, $amount: 60%);
+      }
     .carte {
       background-color: white;
       width: 98%;
