@@ -59,7 +59,7 @@ header h1 {
 
 .explorer {
   text-align: center;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem 3rem 0rem;
 }
 .explorer h2 {
   font-size: 1.8rem;
@@ -301,6 +301,7 @@ header h1 {
   background-color: #302f2f;
   padding-bottom: 0rem;
   display: flex;
+  padding: 1em;
 }
 .pied_de_page .titre_footer {
   color: white;
@@ -613,15 +614,15 @@ a {
 
   .menu_carte {
     width: 100%;
-    height: 565px;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: -3rem auto;
   }
 
   .menu_entree {
     width: 30%;
     margin: 0;
     padding: 1rem 1rem;
-    height: 450px;
   }
 
   .menu_entree_plat_dessert {
@@ -630,7 +631,6 @@ a {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    height: 450px;
   }
 }
 
