@@ -120,8 +120,11 @@
       justify-content: space-between;
       align-items: center;
       margin: 0rem 1rem;
-      padding-right: 1.5rem;
+      padding-right: 0.5rem;
       overflow: hidden;
+    }
+    .prix_menu{
+      padding-left: 0.5rem;
     }
     .check {
       margin-right: -7rem;
@@ -190,8 +193,7 @@
   .menu_entree_plat_dessert {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    overflow: hidden;
   }
+  
 }
