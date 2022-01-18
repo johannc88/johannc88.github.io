@@ -1,5 +1,6 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/hover.scss";
+@import "../utils/color.scss";
 
 .fonctionnement {
   margin-top: 4rem;
@@ -35,7 +36,7 @@
       content: counter(numero);
       counter-increment: numero;
       color: white;
-      background-color: #9356dc;
+      background-color: $violet;
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -58,6 +59,6 @@
     color: rgb(161, 161, 161);
   }
   & li:hover i.fas {
-    color: #9356dc;
+    color: $violet;
   }
 }

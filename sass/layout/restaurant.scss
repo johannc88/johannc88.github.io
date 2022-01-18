@@ -1,6 +1,8 @@
 @import "../utils/heart.scss";
 @import "../utils/box-shadow.scss";
 @import "../utils/hover.scss";
+@import "../utils/color.scss";
+
 .menus {
   background-color: #f0f0f0;
   padding-bottom: 4rem;
@@ -25,14 +27,14 @@
       position: absolute;
       height: 2rem;
       width: 5rem;
-      background-color: #99e2d0;
+      background-color: $blue;
       right: 1rem;
       top: 1rem;
       justify-content: center;
       align-items: center;
       display: flex;
       opacity: 0.8;
-      color: darken($color: #99e2d0, $amount: 60%);
+      color: darken($color: $blue, $amount: 60%);
       }
     .carte {
       background-color: white;

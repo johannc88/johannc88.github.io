@@ -2,6 +2,7 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/animation.scss";
 @import "../utils/heart.scss";
+@import "../utils/color.scss";
 
 .header {
   display: flex;
@@ -65,7 +66,7 @@
     padding-bottom: 0.2rem;
     font-size: 1.2rem;
     font-weight: 100;
-    border-bottom: 3px solid #99e2d0;
+    border-bottom: 3px solid $blue;
     width: 2.5rem;
   }
 
@@ -130,8 +131,8 @@
       margin-right: -7rem;
       height: 5rem;
       width: 5rem;
-      background-color: #99e2d0;
-      color: #99e2d0;
+      background-color: $blue;
+      color: $blue;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -1,0 +1,13 @@
+    @import "../utils/color.scss";
+    
+    @mixin button{
+    cursor: pointer;
+    margin-top: 1.2rem;
+    background-image: linear-gradient(to top, $violet, $rose);
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
