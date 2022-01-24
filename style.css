@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -239,9 +237,11 @@ header h1 {
   margin-right: -32px;
 }
 .menus .carte_menu .fas.fa-heart {
-  background: -moz-linear-gradient(top, #9356dc, #ff79da 100%);
-  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
-  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  font-size: 33px;
+  -webkit-background-clip: text;
+  background: -moz-linear-gradient(top, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -250,7 +250,7 @@ header h1 {
 }
 .menus .carte_menu .far.fa-heart:hover {
   opacity: 0;
-  transition: 0.7;
+  transition: 0.7s;
 }
 .menus .carte_menu .fas.fa-heart:hover {
   opacity: 1;
@@ -276,7 +276,6 @@ header h1 {
 .pied_de_page .titre_footer h2 {
   font-family: "shrikhand";
   font-weight: 200;
-  font-family: 0.6rem;
   padding: 1rem 2rem;
   margin: 0;
 }
@@ -415,9 +414,11 @@ a {
   margin-right: -32px;
 }
 .titre_restaurant .fas.fa-heart {
-  background: -moz-linear-gradient(top, #9356dc, #ff79da 100%);
-  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
-  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  font-size: 33px;
+  -webkit-background-clip: text;
+  background: -moz-linear-gradient(top, #9356dc, #ff79da);
+  background: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -426,7 +427,7 @@ a {
 }
 .titre_restaurant .far.fa-heart:hover {
   opacity: 0;
-  transition: 0.7;
+  transition: 0.7s;
 }
 .titre_restaurant .fas.fa-heart:hover {
   opacity: 1;
@@ -533,7 +534,6 @@ a {
   height: 5rem;
   width: 5rem;
   background-color: #99e2d0;
-  color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -545,6 +545,7 @@ a {
   padding: 0.5rem;
   border-radius: 50%;
   right: 1rem;
+  color: #99e2d0;
 }
 .menu_entree .description_menu:hover .fas {
   animation: rotation 2s;
